@@ -1,0 +1,39 @@
+# 模型配置
+model:
+  name: "UNet"
+  in_channels: 1
+  out_channels: 1
+  features: 32
+
+# 数据配置
+data:
+  train_path: "dataset/train/"
+  val_path: "dataset/val/"
+  batch_size: 6
+  num_workers: 4
+  pin_memory: true
+
+# 训练配置
+training:
+  epochs: 300
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  early_stopping_patience: 20
+  use_amp: true
+  gradient_clip: 1.0
+
+# 优化器配置
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1e-08
+  amsgrad: false
+
+# 模型保存配置
+model_save:
+  path: "model/best_UNet.pth"
+  save_best_only: true
+
+# 设备配置
+device:
+  use_cuda: true
