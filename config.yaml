@@ -1,15 +1,17 @@
 # 模型配置
 model:
-  name: "UNet"
+  name: "HNet"
   in_channels: 1
   out_channels: 1
-  features: 32
+  features: 8
+  num_levels: 1
 
 # 数据配置
 data:
-  train_path: "dataset/train/"
-  val_path: "dataset/val/"
-  batch_size: 6
+  train_path: "data/train/"
+  val_path: "data/val/"
+  test_path: "data/test"
+  batch_size: 4
   num_workers: 4
   pin_memory: true
 
@@ -31,9 +33,13 @@ optimizer:
 
 # 模型保存配置
 model_save:
-  path: "model/best_UNet.pth"
+  path: "model/HNet.pth"
   save_best_only: true
 
 # 设备配置
 device:
   use_cuda: true
+
+# 预测配置
+predict:
+  output_dir: "prediction/"

@@ -1,0 +1,23 @@
+D:\HX\software\anaconda3\envs\nafnet\python.exe "C:\Users\16845\Desktop\Computationl Imaging Lab\predict.py"
+使用设备: cuda
+成功加载模型权重: model/UNet.pth
+开始评估 115 个测试样本...
+处理进度: 0/115, PSNR: 23.84, SSIM: 0.543
+处理进度: 10/115, PSNR: 27.33, SSIM: 0.679
+处理进度: 20/115, PSNR: 23.48, SSIM: 0.510
+处理进度: 30/115, PSNR: 23.19, SSIM: 0.494
+处理进度: 40/115, PSNR: 28.43, SSIM: 0.599
+处理进度: 50/115, PSNR: 25.58, SSIM: 0.572
+处理进度: 60/115, PSNR: 27.05, SSIM: 0.590
+处理进度: 70/115, PSNR: 30.59, SSIM: 0.741
+处理进度: 80/115, PSNR: 24.79, SSIM: 0.583
+处理进度: 90/115, PSNR: 24.91, SSIM: 0.481
+处理进度: 100/115, PSNR: 27.08, SSIM: 0.579
+处理进度: 110/115, PSNR: 25.68, SSIM: 0.584
+
+评估完成！
+平均 PSNR: 26.71 dB
+平均 SSIM: 0.600
+有效样本数: 115/115
+
+进程已结束，退出代码为 0

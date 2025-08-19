@@ -7,10 +7,11 @@ from piqa import PSNR, SSIM
 from tqdm import tqdm
 import time
 import os
-import yaml
 from typing import Dict, Any
 
-import UNet.model as UNet
+import models.UNet.model as UNet
+import models.HNet.model as HNet
+
 from dataset import ISBI_Loader
 from config import load_config, print_config
 
@@ -23,10 +24,11 @@ def train_net(config: Dict[str, Any]):
     print(f"使用设备: {device}")
 
     model_config = config['model']
-    net = UNet.UNet(
+    net = HNet.HNet(
         in_channels=model_config['in_channels'],
         out_channels=model_config['out_channels'],
-        features=model_config['features']
+        features=model_config['features'],
+        num_levels=model_config['num_levels']
     )
     net = net.to(device)
 
@@ -93,10 +95,9 @@ def train_net(config: Dict[str, Any]):
 
             optimizer.zero_grad()
 
-            with autocast(enabled=use_amp):
-                pred = net(image)
-                mse_loss = mse_criterion(pred, label)
-                loss = mse_loss
+            pred = net(image)
+            mse_loss = mse_criterion(pred, label)
+            loss = mse_loss
 
             scaler.scale(loss).backward()
 

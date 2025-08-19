@@ -48,7 +48,7 @@ class ISBI_Loader(Dataset):
 
 
 if __name__ == "__main__":
-    dataset = ISBI_Loader("dataset/train")
+    dataset = ISBI_Loader("data/train")
     print("数据个数:", len(dataset))
 
     train_loader = torch.utils.data.DataLoader(

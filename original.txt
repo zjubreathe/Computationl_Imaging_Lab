@@ -1,0 +1,22 @@
+D:\HX\software\anaconda3\envs\nafnet\python.exe "C:\Users\16845\Desktop\Computationl Imaging Lab\utils.py"
+使用设备: cuda
+开始评估 115 个测试样本...
+处理进度: 0/115, PSNR: 22.36, SSIM: 0.487
+处理进度: 10/115, PSNR: 26.15, SSIM: 0.638
+处理进度: 20/115, PSNR: 22.34, SSIM: 0.462
+处理进度: 30/115, PSNR: 22.15, SSIM: 0.447
+处理进度: 40/115, PSNR: 27.30, SSIM: 0.576
+处理进度: 50/115, PSNR: 24.82, SSIM: 0.543
+处理进度: 60/115, PSNR: 26.53, SSIM: 0.574
+处理进度: 70/115, PSNR: 29.81, SSIM: 0.727
+处理进度: 80/115, PSNR: 24.08, SSIM: 0.554
+处理进度: 90/115, PSNR: 24.02, SSIM: 0.438
+处理进度: 100/115, PSNR: 25.91, SSIM: 0.535
+处理进度: 110/115, PSNR: 24.74, SSIM: 0.556
+
+评估完成！
+平均 PSNR: 25.69 dB
+平均 SSIM: 0.567
+有效样本数: 115/115
+
+进程已结束，退出代码为 0
