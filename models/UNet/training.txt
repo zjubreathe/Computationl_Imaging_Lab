@@ -1,0 +1,248 @@
+D:\HX\software\anaconda3\envs\nafnet\python.exe "C:\Users\16845\Desktop\Computationl Imaging Lab\train.py" 
+==================================================
+训练配置:
+==================================================
+data:
+  batch_size: 6
+  num_workers: 4
+  pin_memory: true
+  train_path: dataset/train/
+  val_path: dataset/val/
+device:
+  use_cuda: true
+model:
+  features: 32
+  in_channels: 1
+  name: UNet
+  out_channels: 1
+model_save:
+  path: model/best_UNet.pth
+  save_best_only: true
+optimizer:
+  amsgrad: false
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1e-08
+  type: AdamW
+training:
+  early_stopping_patience: 20
+  epochs: 300
+  gradient_clip: 1.0
+  learning_rate: 0.0003
+  use_amp: true
+  weight_decay: 0.0001
+
+==================================================
+使用设备: cuda
+开始训练，共 300 个epoch
+--------------------------------------------------------------------------------
+Epoch   1/300, LR 3.00e-04, Loss 1.0584, PSNR 18.9403, SSIM 0.1491
+🎉 保存最佳模型，PSNR: 18.9403
+Epoch   2/300, LR 3.00e-04, Loss 0.0154, PSNR 20.3035, SSIM 0.1775
+🎉 保存最佳模型，PSNR: 20.3035
+Epoch   3/300, LR 3.00e-04, Loss 0.0086, PSNR 20.8151, SSIM 0.2087
+🎉 保存最佳模型，PSNR: 20.8151
+Epoch   4/300, LR 3.00e-04, Loss 0.0081, PSNR 19.6577, SSIM 0.2597
+Epoch   5/300, LR 3.00e-04, Loss 0.0066, PSNR 21.5688, SSIM 0.2469
+🎉 保存最佳模型，PSNR: 21.5688
+Epoch   6/300, LR 3.00e-04, Loss 0.0072, PSNR 22.7880, SSIM 0.2999
+🎉 保存最佳模型，PSNR: 22.7880
+Epoch   7/300, LR 3.00e-04, Loss 0.0072, PSNR 23.4684, SSIM 0.3461
+🎉 保存最佳模型，PSNR: 23.4684
+Epoch   8/300, LR 3.00e-04, Loss 0.0064, PSNR 23.4603, SSIM 0.4287
+Epoch   9/300, LR 3.00e-04, Loss 0.0060, PSNR 22.0236, SSIM 0.3385
+Epoch  10/300, LR 3.00e-04, Loss 0.0055, PSNR 22.7246, SSIM 0.2960
+Epoch  11/300, LR 3.00e-04, Loss 0.0059, PSNR 21.6424, SSIM 0.2286
+Epoch  12/300, LR 3.00e-04, Loss 0.0058, PSNR 23.8217, SSIM 0.3733
+🎉 保存最佳模型，PSNR: 23.8217
+Epoch  13/300, LR 3.00e-04, Loss 0.0048, PSNR 24.5053, SSIM 0.4135
+🎉 保存最佳模型，PSNR: 24.5053
+Epoch  14/300, LR 3.00e-04, Loss 0.0045, PSNR 24.9407, SSIM 0.5223
+🎉 保存最佳模型，PSNR: 24.9407
+Epoch  15/300, LR 3.00e-04, Loss 0.0040, PSNR 25.1392, SSIM 0.5100
+🎉 保存最佳模型，PSNR: 25.1392
+Epoch  16/300, LR 3.00e-04, Loss 0.0042, PSNR 22.2885, SSIM 0.4214
+Epoch  17/300, LR 3.00e-04, Loss 0.0041, PSNR 25.3028, SSIM 0.4784
+🎉 保存最佳模型，PSNR: 25.3028
+Epoch  18/300, LR 3.00e-04, Loss 0.0039, PSNR 25.5231, SSIM 0.5058
+🎉 保存最佳模型，PSNR: 25.5231
+Epoch  19/300, LR 3.00e-04, Loss 0.0039, PSNR 24.2444, SSIM 0.5362
+Epoch  20/300, LR 3.00e-04, Loss 0.0033, PSNR 25.3686, SSIM 0.5158
+Epoch  21/300, LR 3.00e-04, Loss 0.0036, PSNR 24.8996, SSIM 0.5076
+Epoch  22/300, LR 3.00e-04, Loss 0.0037, PSNR 25.2796, SSIM 0.4593
+Epoch  23/300, LR 3.00e-04, Loss 0.0030, PSNR 25.3226, SSIM 0.5214
+Epoch  24/300, LR 3.00e-04, Loss 0.0036, PSNR 24.9519, SSIM 0.5256
+Epoch  25/300, LR 3.00e-04, Loss 0.0030, PSNR 23.4652, SSIM 0.5082
+Epoch  26/300, LR 3.00e-04, Loss 0.0036, PSNR 24.9815, SSIM 0.5347
+Epoch  27/300, LR 3.00e-04, Loss 0.0030, PSNR 25.8862, SSIM 0.5601
+🎉 保存最佳模型，PSNR: 25.8862
+Epoch  28/300, LR 3.00e-04, Loss 0.0029, PSNR 25.9070, SSIM 0.5300
+🎉 保存最佳模型，PSNR: 25.9070
+Epoch  29/300, LR 3.00e-04, Loss 0.0029, PSNR 26.1136, SSIM 0.5603
+🎉 保存最佳模型，PSNR: 26.1136
+Epoch  30/300, LR 3.00e-04, Loss 0.0032, PSNR 26.1057, SSIM 0.5658
+Epoch  31/300, LR 3.00e-04, Loss 0.0028, PSNR 25.5047, SSIM 0.5345
+Epoch  32/300, LR 3.00e-04, Loss 0.0034, PSNR 24.6031, SSIM 0.4668
+Epoch  33/300, LR 3.00e-04, Loss 0.0030, PSNR 25.7949, SSIM 0.5120
+Epoch  34/300, LR 3.00e-04, Loss 0.0029, PSNR 25.7823, SSIM 0.5041
+Epoch  35/300, LR 3.00e-04, Loss 0.0028, PSNR 26.1598, SSIM 0.5578
+🎉 保存最佳模型，PSNR: 26.1598
+Epoch  36/300, LR 3.00e-04, Loss 0.0028, PSNR 25.9129, SSIM 0.5479
+Epoch  37/300, LR 3.00e-04, Loss 0.0035, PSNR 25.7617, SSIM 0.5598
+Epoch  38/300, LR 3.00e-04, Loss 0.0028, PSNR 26.0084, SSIM 0.5608
+Epoch  39/300, LR 3.00e-04, Loss 0.0028, PSNR 25.6044, SSIM 0.5626
+Epoch  40/300, LR 3.00e-04, Loss 0.0037, PSNR 25.0068, SSIM 0.4432
+Epoch  41/300, LR 3.00e-04, Loss 0.0028, PSNR 26.1831, SSIM 0.5658
+🎉 保存最佳模型，PSNR: 26.1831
+Epoch  42/300, LR 3.00e-04, Loss 0.0027, PSNR 25.6869, SSIM 0.5612
+Epoch  43/300, LR 3.00e-04, Loss 0.0027, PSNR 25.7887, SSIM 0.5713
+Epoch  44/300, LR 3.00e-04, Loss 0.0027, PSNR 26.2460, SSIM 0.5674
+🎉 保存最佳模型，PSNR: 26.2460
+Epoch  45/300, LR 3.00e-04, Loss 0.0028, PSNR 26.3282, SSIM 0.5734
+🎉 保存最佳模型，PSNR: 26.3282
+Epoch  46/300, LR 3.00e-04, Loss 0.0029, PSNR 25.5283, SSIM 0.5344
+Epoch  47/300, LR 3.00e-04, Loss 0.0027, PSNR 26.2533, SSIM 0.5679
+Epoch  48/300, LR 3.00e-04, Loss 0.0027, PSNR 26.4198, SSIM 0.5770
+🎉 保存最佳模型，PSNR: 26.4198
+Epoch  49/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3223, SSIM 0.5692
+Epoch  50/300, LR 3.00e-04, Loss 0.0027, PSNR 26.1835, SSIM 0.5547
+Epoch  51/300, LR 3.00e-04, Loss 0.0027, PSNR 26.4238, SSIM 0.5814
+🎉 保存最佳模型，PSNR: 26.4238
+Epoch  52/300, LR 3.00e-04, Loss 0.0028, PSNR 26.2853, SSIM 0.5540
+Epoch  53/300, LR 3.00e-04, Loss 0.0028, PSNR 26.3764, SSIM 0.5708
+Epoch  54/300, LR 3.00e-04, Loss 0.0027, PSNR 26.1377, SSIM 0.5636
+Epoch  55/300, LR 3.00e-04, Loss 0.0027, PSNR 25.4064, SSIM 0.5318
+Epoch  56/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3058, SSIM 0.5805
+Epoch  57/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3800, SSIM 0.5707
+Epoch  58/300, LR 3.00e-04, Loss 0.0027, PSNR 26.2182, SSIM 0.5581
+Epoch  59/300, LR 3.00e-04, Loss 0.0027, PSNR 26.4301, SSIM 0.5742
+🎉 保存最佳模型，PSNR: 26.4301
+Epoch  60/300, LR 3.00e-04, Loss 0.0027, PSNR 26.2821, SSIM 0.5804
+Epoch  61/300, LR 3.00e-04, Loss 0.0034, PSNR 23.7574, SSIM 0.4637
+Epoch  62/300, LR 3.00e-04, Loss 0.0027, PSNR 26.1823, SSIM 0.5396
+Epoch  63/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3170, SSIM 0.5748
+Epoch  64/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3553, SSIM 0.5610
+Epoch  65/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4501, SSIM 0.5757
+🎉 保存最佳模型，PSNR: 26.4501
+Epoch  66/300, LR 3.00e-04, Loss 0.0027, PSNR 26.4463, SSIM 0.5747
+Epoch  67/300, LR 3.00e-04, Loss 0.0026, PSNR 26.2231, SSIM 0.5455
+Epoch  68/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3262, SSIM 0.5613
+Epoch  69/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4426, SSIM 0.5725
+Epoch  70/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3031, SSIM 0.5733
+Epoch  71/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4405, SSIM 0.5850
+Epoch  72/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3543, SSIM 0.5706
+Epoch  73/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4853, SSIM 0.5842
+🎉 保存最佳模型，PSNR: 26.4853
+Epoch  74/300, LR 3.00e-04, Loss 0.0027, PSNR 26.4768, SSIM 0.5749
+Epoch  75/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4703, SSIM 0.5861
+Epoch  76/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4728, SSIM 0.5876
+Epoch  77/300, LR 3.00e-04, Loss 0.0027, PSNR 26.3423, SSIM 0.5523
+Epoch  78/300, LR 3.00e-04, Loss 0.0026, PSNR 26.0744, SSIM 0.5468
+Epoch  79/300, LR 3.00e-04, Loss 0.0026, PSNR 25.9413, SSIM 0.5625
+Epoch  80/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5063, SSIM 0.5769
+🎉 保存最佳模型，PSNR: 26.5063
+Epoch  81/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3271, SSIM 0.5544
+Epoch  82/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4591, SSIM 0.5792
+Epoch  83/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3289, SSIM 0.5688
+Epoch  84/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4566, SSIM 0.5744
+Epoch  85/300, LR 3.00e-04, Loss 0.0026, PSNR 25.5289, SSIM 0.5436
+Epoch  86/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3922, SSIM 0.5811
+Epoch  87/300, LR 3.00e-04, Loss 0.0026, PSNR 26.2754, SSIM 0.5863
+Epoch  88/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4643, SSIM 0.5848
+Epoch  89/300, LR 3.00e-04, Loss 0.0025, PSNR 26.3835, SSIM 0.5806
+Epoch  90/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5974, SSIM 0.5903
+🎉 保存最佳模型，PSNR: 26.5974
+Epoch  91/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4024, SSIM 0.5796
+Epoch  92/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5283, SSIM 0.5831
+Epoch  93/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5061, SSIM 0.5864
+Epoch  94/300, LR 3.00e-04, Loss 0.0025, PSNR 25.9509, SSIM 0.5599
+Epoch  95/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4571, SSIM 0.5821
+Epoch  96/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4421, SSIM 0.5753
+Epoch  97/300, LR 3.00e-04, Loss 0.0026, PSNR 25.4187, SSIM 0.5692
+Epoch  98/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5803, SSIM 0.5893
+Epoch  99/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5467, SSIM 0.5811
+Epoch 100/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4083, SSIM 0.5616
+Epoch 101/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5701, SSIM 0.5845
+Epoch 102/300, LR 3.00e-04, Loss 0.0026, PSNR 26.3583, SSIM 0.5686
+Epoch 103/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5403, SSIM 0.5815
+Epoch 104/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4275, SSIM 0.5843
+Epoch 105/300, LR 3.00e-04, Loss 0.0025, PSNR 26.3249, SSIM 0.5579
+Epoch 106/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6109, SSIM 0.5857
+🎉 保存最佳模型，PSNR: 26.6109
+Epoch 107/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5228, SSIM 0.5779
+Epoch 108/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5045, SSIM 0.5809
+Epoch 109/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5931, SSIM 0.5835
+Epoch 110/300, LR 3.00e-04, Loss 0.0026, PSNR 26.1881, SSIM 0.5767
+Epoch 111/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5313, SSIM 0.5869
+Epoch 112/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5586, SSIM 0.5874
+Epoch 113/300, LR 3.00e-04, Loss 0.0025, PSNR 26.1376, SSIM 0.5607
+Epoch 114/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5701, SSIM 0.5883
+Epoch 115/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4039, SSIM 0.5905
+Epoch 116/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5119, SSIM 0.5896
+Epoch 117/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5384, SSIM 0.5788
+Epoch 118/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6239, SSIM 0.5928
+🎉 保存最佳模型，PSNR: 26.6239
+Epoch 119/300, LR 3.00e-04, Loss 0.0026, PSNR 26.2462, SSIM 0.5523
+Epoch 120/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5054, SSIM 0.5877
+Epoch 121/300, LR 3.00e-04, Loss 0.0025, PSNR 26.3153, SSIM 0.5747
+Epoch 122/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4524, SSIM 0.5746
+Epoch 123/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4868, SSIM 0.5857
+Epoch 124/300, LR 3.00e-04, Loss 0.0026, PSNR 26.4389, SSIM 0.5861
+Epoch 125/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5384, SSIM 0.5857
+Epoch 126/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4592, SSIM 0.5672
+Epoch 127/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6236, SSIM 0.5897
+Epoch 128/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5576, SSIM 0.5750
+Epoch 129/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5545, SSIM 0.5816
+Epoch 130/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4134, SSIM 0.5542
+Epoch 131/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4607, SSIM 0.5909
+Epoch 132/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6622, SSIM 0.5902
+🎉 保存最佳模型，PSNR: 26.6622
+Epoch 133/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4168, SSIM 0.5827
+Epoch 134/300, LR 3.00e-04, Loss 0.0025, PSNR 26.3753, SSIM 0.5569
+Epoch 135/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5751, SSIM 0.5862
+Epoch 136/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5113, SSIM 0.5863
+Epoch 137/300, LR 3.00e-04, Loss 0.0026, PSNR 26.5518, SSIM 0.5891
+Epoch 138/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6164, SSIM 0.5903
+Epoch 139/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4062, SSIM 0.5715
+Epoch 140/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4813, SSIM 0.5874
+Epoch 141/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5097, SSIM 0.5789
+Epoch 142/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5753, SSIM 0.5789
+Epoch 143/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6755, SSIM 0.5951
+🎉 保存最佳模型，PSNR: 26.6755
+Epoch 144/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6224, SSIM 0.5871
+Epoch 145/300, LR 3.00e-04, Loss 0.0025, PSNR 26.1119, SSIM 0.5873
+Epoch 146/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5310, SSIM 0.5872
+Epoch 147/300, LR 3.00e-04, Loss 0.0025, PSNR 26.0537, SSIM 0.5441
+Epoch 148/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5803, SSIM 0.5839
+Epoch 149/300, LR 3.00e-04, Loss 0.0025, PSNR 26.2894, SSIM 0.5813
+Epoch 150/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6294, SSIM 0.5907
+Epoch 151/300, LR 3.00e-04, Loss 0.0024, PSNR 26.6637, SSIM 0.5918
+Epoch 152/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5558, SSIM 0.5801
+Epoch 153/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6793, SSIM 0.5932
+🎉 保存最佳模型，PSNR: 26.6793
+Epoch 154/300, LR 3.00e-04, Loss 0.0025, PSNR 26.1369, SSIM 0.5709
+Epoch 155/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6493, SSIM 0.5913
+Epoch 156/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6304, SSIM 0.5918
+Epoch 157/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4829, SSIM 0.5791
+Epoch 158/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5349, SSIM 0.5863
+Epoch 159/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6514, SSIM 0.5943
+Epoch 160/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4620, SSIM 0.5686
+Epoch 161/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5182, SSIM 0.5867
+Epoch 162/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5154, SSIM 0.5747
+Epoch 163/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6293, SSIM 0.5890
+Epoch 164/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5317, SSIM 0.5934
+Epoch 165/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6612, SSIM 0.5891
+Epoch 166/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6031, SSIM 0.5938
+Epoch 167/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5832, SSIM 0.5805
+Epoch 168/300, LR 3.00e-04, Loss 0.0025, PSNR 26.6372, SSIM 0.5900
+Epoch 169/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5631, SSIM 0.5853
+Epoch 170/300, LR 3.00e-04, Loss 0.0025, PSNR 26.4050, SSIM 0.5638
+Epoch 171/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5226, SSIM 0.5925
+Epoch 172/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5825, SSIM 0.5851
+Epoch 173/300, LR 3.00e-04, Loss 0.0025, PSNR 26.5941, SSIM 0.5810
+⏹️ 在epoch 173提前停止训练
+
+训练完成！最佳PSNR: 26.6793
+
+进程已结束，退出代码为 0
